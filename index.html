@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <form method="get">
+        Username: <input type="text"/><br>
+        Password: <input type="password"/><br>
+        Lưu <input type="checkbox"/><br>
+        <input type="button" value="Log in"/>
+    </form>
+    <form>
+        First Name <input type="text"/>
+        Last Name <input type="text"/><br>
+        Birthday <input type="date"/><br>
+        Gender <br>
+        Male <input type="radio"/>
+        Female <input type="radio"/><br>
+        Email <input placeholder="abc@mail.com" type="email"/>
+        Phone number <input type="number"/><br>
+        Subject
+        <select>
+            <option value="aaa">aaa</option>
+            <option value="bbb">bbb</option>
+            <option value="ccc">ccc</option>
+        </select><br>
+        <input type="submit" value="Submit"/>
+    </form>
+    <div>
+        <label for="firstName">First Name</label>
+        <input id="firstName" type="text">
+    </div>
+    <div>
+        <label for="lastName">Last Name</label>
+        <input id="lastName" type="text">
+    </div>
+    <div>
+        <label for="male">Male</label>
+        <input type="radio" name="" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="" id="female">
+    </div>
+    <div>
+        <select>
+            <option value="aaa">aaa</option>
+            <option value="bbb">bbb</option>
+            <option value="ccc">ccc</option>
+        </select>
+        <input type="submit" value="Submit"/>
+        <input type="button" value="Submit"/>
+        <button type="submit">Submit</button>
+    </div>
+    <table>
+        <tbody>
+            <tr>
+                <td id="firstName">First Name</td>
+                <td id="lastName">Last Name</td>
+            </tr>
+            <tr>
+                <td><input id="firstName" type="text"></td>
+                <td><input id="lastName" type="text"></td>
+            </tr>
+            <tr>
+                <td id="birthDay">Birthday</td>
+                <td id="gender">Gender</td>
+            </tr>
+            <tr>
+                <td><input id="birthDay" type="text"></td>
+                <td>
+                    <input type="radio" name="" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="" id="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td id="email">Email</td>
+                <td id="phoneNumber">Phone Number</td>
+            </tr>
+            <tr>
+                <td><input id="email" type="email"></td>
+                <td><input id="phoneNumber" type="number"></td>
+            </tr>
+            <tr>
+                <td>Subject</td>
+            </tr>
+            <tr>
+                <td>
+                    <select>
+                        <option value="aaa">aaa</option>
+                        <option value="bbb">bbb</option>
+                        <option value="ccc">ccc</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table align="center" border="1" width="500">
+        <caption align="center">Doanh thu theo tháng</caption>
+        <thead>
+            <tr>
+                <th>Tháng</th>
+                <th>Doanh thu</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Một</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Hai</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td colspan="2">Tổng:$180</td>
+            </tr>
+        </tbody>
+    </table>
+<br>
+    <table border="1" width="80%" align="left">
+        <thead>
+            <tr>
+                <th>Quý</th>
+                <th>Tháng</th>
+                <th>Doanh thu</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Một</td>
+                <td>Một</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Hai</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td>Ba</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Hai</td>
+                <td>Bốn</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Năm</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td>Sáu</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table border="1" width="80%">
+        <caption align="center">Rikkei Academy - Order</caption>
+            <tr>
+                <td rowspan="10">RA</td>
+                <td>Order no:</td>
+                <td colspan="3">#RA001</td>
+            </tr>
+            <tr>
+                <td>Order Date:</td>
+                <td colspan="3">02/12/2022</td>
+            </tr>
+            <tr>
+                <td colspan="4">Customer</td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td colspan="3">NGUYEN VAN A</td>
+            </tr>            <tr>
+                <td>Address:</td>
+                <td colspan="3">7th floor, Tower A...</td>
+            </tr>
+            <tr>
+                <td colspan="4">Order Detail</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>HTML</td>
+                <td>Book</td>
+                <td>10.00$</td>
+            </tr>            <tr>
+                <td>2</td>
+                <td>CSS</td>
+                <td>Book</td>
+                <td>12.00$</td>
+            </tr>            <tr>
+                <td>3</td>
+                <td>Javascript</td>
+                <td>DVD</td>
+                <td>50.00$</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>72.00$</td>
+            </tr>
+    </table>
+    <br>
+    <div>
+        <img src="https://fakeimg.pl/190x50/" alt="">
+        <h1>Best Shared Hosting Company</h1>
+        <p>With this responsive landing page template, you can promote your all hosting, domain and email services.</p>
+        <ul>
+            <li><a href="#">View Plans</a></li>
+            <li><a href="#">All Features</a></li>
+        </ul>
+    </div>
+    <br>
+    <div>
+            <img src="https://fakeimg.pl/190x50/" alt="">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Domain</a></li>
+            <li><a href="#">Hosting</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <input type="button" value="Customer Login">
+    </div>
+    <br>
+    <div>
+        <h1>Learn more about beautiful furniture web design combinations</h1>
+        <img src="https://fakeimg.pl/700x500/?text=Hoc web chuan" alt="">
+        <h2>Today we will teach you how to find professional materials for your furniture website design.</h2>
+        <p>Curabitur ut eros orci. Mauris non egstas sem. Fusce mattis tortor sit amet blandit sodales. Nam finibus faucibus ante ut pulvinar. Pellentesque vitae sagittis dolor. Mauris auctor risus eu eros ornare, in pellentesque purus elementum. Etiam efficitur tempr justo. Nullam vel ante sapien.</p>
+    </div>
+    <br>
+    <div>
+        <i class="material-icons">email</i>
+        <h1>Get the invite</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <input type="email" placeholder="Enter Email">
+        <div>
+            <input type="button" value="REQUEST INVITE">
+        </div>
+    </div>
+    <br>
+
+    <div>
+        <ul>
+            <li><i class="glyphicon glyphicon-leaf"></i></li>
+        </ul>
+        <h2>UI/UX Design</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit mi quis, vulputate magna.</p>
+        <ul>
+            <li><i class="material-icons">computer</i></li>
+        </ul>
+        <h2>Web Development</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit mi quis, vulputate magna.</p>
+        <ul>
+            <li><i class='fa fa-shopping-bag'></i></li>
+        </ul>
+        <h2>Branding</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit mi quis, vulputate magna.</p>
+        <ul>
+            <li><i class="fa fa-camera"></i></li>
+        </ul>
+        <h2>Photography</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit mi quis, vulputate magna.</p>
+        <ul>
+            <li><i class="fa fa-android"></i></li>
+        </ul>
+        <h2Apps Development</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit mi quis, vulputate magna.</p>
+        <ul>
+            <li><i class="fa fa-line-chart"></i></li>
+        </ul>
+        <h2>Digital Marketing</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit mi quis, vulputate magna.</p>
+    </div>
+
+</body>
+</html>
